@@ -1,0 +1,25 @@
+
+
+export const mockQueryBuilder = {
+    where: jest.fn().mockReturnThis(),
+    andWhere: jest.fn().mockReturnThis(),
+    addSelect: jest.fn().mockReturnThis(),
+    innerJoin: jest.fn().mockReturnThis(),
+    innerJoinAndSelect: jest.fn().mockReturnThis(),
+    leftJoin: jest.fn().mockReturnThis(),
+    set: jest.fn().mockReturnThis(),
+    update: jest.fn().mockReturnThis(),
+    from: jest.fn().mockReturnThis(),
+    delete: jest.fn().mockReturnThis(),
+    insert: jest.fn().mockReturnThis(),
+    this: jest.fn().mockReturnThis(),
+    into: jest.fn().mockReturnThis(),
+    values: jest.fn().mockReturnThis(),
+    relation: jest.fn().mockReturnThis(),
+    of: jest.fn().mockReturnThis(),
+    add: jest.fn().mockReturnThis(),
+    execute: jest.fn(),
+    getOne: jest.fn(), 
+    getOneOrFail: jest.fn(), 
+    getMany: jest.fn(), 
+  };
