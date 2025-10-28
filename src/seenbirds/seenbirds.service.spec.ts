@@ -233,7 +233,7 @@ describe('SeenbirdsService', () => {
 
 
   it('tests failing to find a seenbird id while updating a seenbird', async () => {
-    const id = 999;
+    const id = 99;
 
     const mockFailedDelete = { raw: [], affected: 0 }
 
@@ -247,5 +247,5 @@ describe('SeenbirdsService', () => {
     expect(mockQueryBuilder.from).toHaveBeenCalledWith(SeenBird);
     expect(mockQueryBuilder.where).toHaveBeenCalledWith('id = :id', { id });
     expect(mockQueryBuilder.execute).toHaveBeenCalledTimes(1);
-  });
+  })
 });
